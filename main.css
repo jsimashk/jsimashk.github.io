@@ -1,0 +1,98 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+.navcontainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bodycontainer {
+    width: 80%;
+    margin: 15px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 15px;
+    font-weight: 300;
+    color: #222;
+}
+
+hr {
+    margin: 15px;
+}
+p {
+    margin: 15px;
+    width: 80%;
+    color: #222;
+    font-weight: 100;
+}
+
+header {
+    background: #55d6aa
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
