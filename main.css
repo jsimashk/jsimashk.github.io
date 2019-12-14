@@ -1,31 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 80%;
+    width: 90%;
+    height: 100%;
+    padding: 0px;
     margin: 0 auto;
     background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
 }
 
+iframe {
+    width: inherit;
+    height: 1000px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width: 100px) {
+    .leading {
+       display: flex;
+       align-items: center;
+     }
+   }
+
+.mainsection {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+.frame {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidesection {
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    
+}
 .navcontainer {
-    width: 80%;
+    width: inherit;
+    height: 100%;
     margin: 0 auto;
 }
 
 .bodycontainer {
-    width: 80%;
-    margin: 15px;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
     background-color: whitesmoke;
+    border: solid 1px whitesmoke;
 }
 
+.dataframe {
+    background-color: whitesmoke;
+}
 h1 {
     margin: 15px;
-    font-weight: 300;
-    color: #222;
+    font-weight: 500;
+    color: #48C9BC;
 }
 
 hr {
     margin: 15px;
 }
+
+.container{
+    display: flexbox;
+    background-color: whitesmoke;
+    margin: 15px;
+}
+
+.row {
+    display: inline-flex;
+}
+
 p {
     margin: 15px;
     width: 80%;
@@ -45,12 +102,14 @@ header::after {
 
 .logo {
     float: left;
+    height: inherit;
     padding: 10px 0;
 }
 
 nav {
     width: 80%;
     margin: 0 auto;
+    padding: 0px;
 }
 
 nav ul {
@@ -59,13 +118,45 @@ nav ul {
     list-style: none;
 }
 
-nav li {
+nav ul li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 25px;
-
+    margin-left: 200px;
+    padding-top: 15px;
     position: relative;
 }
+
+nav ul li ul {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 15px;
+
+}
+
+nav ul li ul li a{
+    padding: 10px;
+    margin: 0px;
+    height: 50px;
+    background: #55d6aa;
+    width: 200px;
+    display: inline-block;
+}
+
 
 nav a {
     color: #444;
@@ -74,11 +165,13 @@ nav a {
     font-size: 20;
 }
 
-nav a:hover {
+
+/*
+nav ul li a:hover {
     color: #000;
 }
 
-nav a::before {
+nav ul li a::before {
     content: '';
     display: block;
     height: 5px;
@@ -92,7 +185,7 @@ nav a::before {
     transition: all ease-in-out 200ms;
 }
 
-nav a:hover::before {
+nav ul li a:hover::before {
     width: 100%;
 }
-
+*/
