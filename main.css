@@ -189,3 +189,21 @@ nav ul li a:hover::before {
     width: 100%;
 }
 */
+
+tr:nth-child(even) {background-color: #cecaca;}
+tr:hover {background-color: hsl(212, 53%, 86%);}
+tr {height: 40px;}
+th {
+    border-bottom: 1px solid #8d8787;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table,th, td {
+    border: 0px solid black;
+    text-align: left;
+  }
+
