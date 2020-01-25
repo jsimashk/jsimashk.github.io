@@ -150,24 +150,26 @@ function plotGaugeGraph(data, index){
             title: { text: "Scrubs per Week" },
             type: "indicator",
             mode: "gauge+number",
-            /*gauge: {
+            gauge: {
                 axis: { range: [0, 9], tickwidth: 1, tickcolor: "darkgreen" },
-                bar: { color: "darkgreen" },
+                bar: { color: "green" },
                 bgcolor: "white",
                 borderwidth: 2,
                 bordercolor: "gray",
                 steps: [
-                  { range: [0, 1], color: "cyan" },
-                  { range: [1, 2], color: "royalblue" },
-                  { range: [2, 3], color: "royalblue" },
-                  { range: [3, 4], color: "royalblue" },
-                  { range: [4, 5], color: "royalblue" },
-                  { range: [5, 6], color: "royalblue" },
-                  { range: [6, 7], color: "royalblue" },
-                  { range: [7, 8], color: "royalblue" },
-                  { range: [8, 9], color: "royalblue" }
+                  { range: [0, 1], color: "rgba(232, 226, 202, .5)"},
+                  { range: [1, 2], color: "rgba(210, 206, 145, .5)" },
+                  { range: [2, 3], color: "rgba(202, 209, 95, .5)" },
+                  { range: [3, 4], color: "rgba(170, 202, 42, .5)" },
+                  { range: [4, 5], color: "rgba(110, 154, 22, .5)" },
+                  { range: [5, 6], color: "rgba(90, 150, 15, .5)" },
+                  { range: [6, 7], color: "rgba(50, 127, 10, .5)" },
+                  //{ range: [7, 8], color: "rgba(14, 127, 5, .5)" },
+                  //{ range: [8, 9], color: "rgba(5, 100, 0, .5" }
+                  { range: [7, 8], color: "green" },
+                  { range: [8, 9], color: "darkgreen" }
                 ]
-            }*/
+            }
         }
     ];
     
