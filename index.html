@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-                <meta charset="UTF -8">
-                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Home</title>
-                <!-- Bootstrap CSS -->
-                <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-                <link rel="stylesheet" href="main.css">
-        </head>
-    ​
-        <body>
-          <header>
-            <div class="navcontainer">
-    ​         <a href="lattitude.html" target="frame1">
-                <img src="Resources/assets/logo.png" alt="logo" class="logo"> 
-                </a> 
-              <nav> 
-                  <ul>
-                    <li>
-                      <a href="#">Plots</a>
-                      <ul>
-                          <li><a href="temperature.html" target="frame1">Max Temperature</a></li>
-                          <li><a href="humidity.html" target="frame1">Humidity</a></li>
-                          <li><a href="cloudiness.html" target="frame1">Cloudiness</a></li>
-                          <li><a href="windspeed.html" target="frame1">Wind Speed</a></li>
-                      </ul>
-                    </li>
+<html lang="en">
 
-                    <li><a href="comparison.html" target="frame1">Comparison</a></li>
-                    <li><a href="data.html" target="frame1">Data</a></li>
-                  </ul>
-               </nav>
-            </div>
-        </header>
-         
-        <br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
 
-        <section class="mainsection">
-            <iframe class="frame" name="frame1" src="lattitude.html" width="60%" frameborder=0 scrolling=no></iframe>
-          </section>
+<body>
 
-            <aside class="sidesection">
-                <iframe class="frame" name="frame2" src="visualizations.html" width="40%"  frameborder=0 scrolling=no></iframe>
-            </aside>
-            
-        </body>
-    </html> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body" text-align=left></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!--<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>-->
+  <script src="./static/js/app.js"></script>
+  <!--<script src="./static/js/bonus.js"></script>-->
+
+</body>
+
+</html>
